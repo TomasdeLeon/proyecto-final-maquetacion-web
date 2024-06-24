@@ -52,10 +52,10 @@ header {
 }
 
 #menu-icon {
-    color: white;
     font-size: 35px;
     z-index: 101; /* Para que esté sobre el header */
     cursor: pointer; /* Para que aparezca la manito cuando ponemos el mouse encima */
+    display: none;
 }
 
 #menu-toogle {
@@ -265,9 +265,8 @@ section {
         margin: 7px 0;
     }
 
-    #menu-toogle:checked + label.menu-icon-action + ul{
+    .navlist.open{
         right: 0;
     }
-
 
 }
